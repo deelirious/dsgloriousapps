@@ -1,0 +1,277 @@
+body,
+body * {
+    /* clear default browser margin/padding */
+    margin: 0;
+    padding: 0;
+}
+
+body>section,
+body>header,
+body>footer {
+    /* max width for readability on large screens */
+    max-width: 1280px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+
+/* flexbox solution to logo vertical centering */
+
+section.logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 2em;
+}
+
+section.logo img {
+    max-width: 250px;
+    margin-right: 5%;
+}
+
+section.logo h1 {
+    font-size: 500%;
+    font-family: 'Old Standard TT', serif;
+    color: #395000;
+}
+
+img.expose {
+    width: 100%;
+    height: auto;
+    /* to get rid of extra spacing */
+    display: block;
+}
+
+.navigation-main>ul,
+.navigation-bottom>ul {
+    list-style: none;
+    overflow: hidden;
+    background-color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 10%;
+    height: 5em;
+}
+
+.navigation-main li {
+    font-size: 200%;
+    font-family: 'Oxygen', sans-serif;
+}
+
+.navigation-bottom li {
+    font-size: 150%;
+    font-family: 'Oxygen', sans-serif;
+}
+
+.navigation-main li a,
+.navigation-bottom li a,
+.navigation-main li.discover span.link-text {
+    display: block;
+    padding: .5em;
+    color: #415d00;
+    text-decoration: none;
+}
+
+.navigation-main li a:hover,
+.navigation-main li a.active,
+.navigation-bottom li a:hover {
+    background: #415d00;
+    color: white;
+    background-size: auto 100%;
+    transition: background 100ms ease-in, color 100ms ease-in;
+}
+
+.navigation-bottom>ul {
+    justify-content: center;
+    padding: 0;
+}
+
+.navigation-lower {
+    display: none;
+    /* scaled down from the 200% above */
+    font-size: 35%;
+}
+
+li.discover:hover .navigation-lower,
+li.discover.active .navigation-lower {
+    display: block;
+    position: absolute;
+}
+
+.navigation-lower ul {
+    list-style: none;
+    background-color: #fff;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+}
+
+.navigation-lower li a {
+    display: block;
+    transition: background 100ms ease-in, color 100ms ease-in;
+}
+
+.navigation-lower li a:hover {
+    background: #415d00;
+    color: white;
+}
+
+section.copyright {
+    color: #293c1f;
+    font-size: 150%;
+    text-align: right;
+}
+
+section.body-text,
+section.highlight1,
+section.highlight2 {
+    font-size: 150%;
+    font-family: 'Old Standard TT', serif;
+    text-align: center;
+    padding-top: 7%;
+    padding-bottom: 7%;
+}
+
+section.body-text {
+    color: #293c1f;
+}
+
+section.highlight1,
+section.highlight2 {
+    color: white;
+}
+
+section.highlight1 {
+    background-color: #293c1f;
+}
+
+section.highlight2 {
+    background-color: #3b3444;
+}
+
+h2.welcome-text {
+    /* to remove the empty space left behind */
+    height: 0;
+    z-index: 10;
+    position: relative;
+    background: transparent;
+    top: 3em;
+    font-size: 5em;
+    text-align: right;
+    padding: .2em .8em;
+    color: white;
+    /* for readability/contrast */
+    text-shadow: 0 .03em .1em #444;
+    font-weight: normal;
+}
+
+h2.welcome-text strong {
+    text-transform: uppercase;
+    display: block;
+    font-size: 2em;
+}
+
+h2.welcome-text em {
+    display: block;
+    margin-right: .5em;
+}
+
+h3 {
+    padding-bottom: 1em;
+}
+
+footer {
+    padding: 1em 0;
+}
+
+footer .copyright {
+    padding-right: 1em;
+}
+
+article.content-text p {
+    text-align: left;
+    font-size: 90%;
+    padding: 1em 1.5em;
+}
+
+p.figure {
+    height: 1em;
+    width: 5em;
+    padding: .5em;
+    text-align: center;
+    position: relative;
+    top: -2em;
+    /* 1 + 2 * .5 */
+    margin-bottom: -2em;
+    color: white;
+    background: rgba(64, 64, 64, .5);
+}
+
+form.contact-form {
+    max-width: 30em;
+    margin: 2em auto;
+}
+
+form.contact-form section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: .1em;
+}
+
+form.contact-form input {
+    flex: .7;
+    padding: .3em;
+}
+
+form.contact-form label {
+    flex: .3;
+    text-align: left;
+}
+
+form.contact-form section.title {
+    justify-content: flex-start;
+    padding-left: 30%;
+}
+
+form.contact-form section.title section {
+    flex: initial;
+    padding: 0 1em 0 0;
+}
+
+form.contact-form section.title input {
+    margin-right: .5em;
+    display: inline-block;
+}
+
+form.contact-form section.message {
+    align-items: flex-start;
+}
+
+form.contact-form .message textarea {
+    flex: .9;
+}
+
+form input.submit-button {
+    padding: .5em;
+    margin: .5em .1em;
+    background-color: white;
+    color: #293c1f;
+    border: #a9a9a9 1px solid;
+    float: right;
+}
+
+form input.submit-button:hover {
+    padding: .5em;
+    margin: .5em;
+    background-color: #293c1f;
+    color: white;
+
+    /* border same color as background so the button doesn't move */
+    border: #293c1f 1px solid;
+}
