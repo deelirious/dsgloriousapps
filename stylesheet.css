@@ -45,8 +45,8 @@ img.expose {
 }
 
 img.portraits {
-    width: 1000px;
-    height auto;
+    height 50%;
+    width: auto;
     display: block;
 
 }
