@@ -71,14 +71,14 @@ img.expose {
 .navigation-main li.discover span.link-text {
     display: block;
     padding: .5em;
-    color: #415d00;
+    color: #5f0f4e;
     text-decoration: none;
 }
 
 .navigation-main li a:hover,
 .navigation-main li a.active,
 .navigation-bottom li a:hover {
-    background: #415d00;
+    background: #5f0f4e;
     color: white;
     background-size: auto 100%;
     transition: background 100ms ease-in, color 100ms ease-in;
@@ -116,7 +116,7 @@ li.discover.active .navigation-lower {
 }
 
 .navigation-lower li a:hover {
-    background: #415d00;
+    background: #5f0f4e;
     color: white;
 }
 
