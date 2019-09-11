@@ -47,7 +47,7 @@ img.expose {
 img.portraits {
     height 50%;
     width: auto;
-    display: block;
+    display: flex;
     align-items: center;
 
 }
