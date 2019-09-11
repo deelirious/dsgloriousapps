@@ -39,9 +39,16 @@ section.logo h1 {
 
 img.expose {
     width: 100%;
-    height: 50%;
+    height: auto;
     /* to get rid of extra spacing */
     display: block;
+}
+
+img.portraits {
+    width: 1000px;
+    height auto;
+    display: block;
+
 }
 
 .navigation-main>ul,
