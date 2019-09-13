@@ -38,17 +38,11 @@ section.logo h1 {
 }
 
 img.expose {
-    width: 100%;
-    height: auto;
+
+    height: 50%;
+    width: auto;
     /* to get rid of extra spacing */
     display: block;
-}
-
-img.portraits {
-    height 50%;
-    width: auto;
-    display: block;
-
 }
 
 .navigation-main>ul,
@@ -78,14 +72,14 @@ img.portraits {
 .navigation-main li.discover span.link-text {
     display: block;
     padding: .5em;
-    color: #5f0f4e;
+    color: #293c1f;
     text-decoration: none;
 }
 
 .navigation-main li a:hover,
 .navigation-main li a.active,
 .navigation-bottom li a:hover {
-    background: #5f0f4e;
+    background: #293c1f;
     color: white;
     background-size: auto 100%;
     transition: background 100ms ease-in, color 100ms ease-in;
@@ -216,69 +210,4 @@ p.figure {
     margin-bottom: -2em;
     color: white;
     background: rgba(64, 64, 64, .5);
-}
-
-form.contact-form {
-    max-width: 30em;
-    margin: 2em auto;
-}
-
-form.contact-form section {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: .1em;
-}
-
-form.contact-form input {
-    flex: .7;
-    padding: .3em;
-}
-
-form.contact-form label {
-    flex: .3;
-    text-align: left;
-}
-
-form.contact-form section.title {
-    justify-content: flex-start;
-    padding-left: 30%;
-}
-
-form.contact-form section.title section {
-    flex: initial;
-    padding: 0 1em 0 0;
-}
-
-form.contact-form section.title input {
-    margin-right: .5em;
-    display: inline-block;
-}
-
-form.contact-form section.message {
-    align-items: flex-start;
-}
-
-form.contact-form .message textarea {
-    flex: .9;
-}
-
-form input.submit-button {
-    padding: .5em;
-    margin: .5em .1em;
-    background-color: white;
-    color: #293c1f;
-    border: #a9a9a9 1px solid;
-    float: right;
-}
-
-form input.submit-button:hover {
-    padding: .5em;
-    margin: .5em;
-    background-color: #293c1f;
-    color: white;
-
-    /* border same color as background so the button doesn't move */
-    border: #293c1f 1px solid;
 }
