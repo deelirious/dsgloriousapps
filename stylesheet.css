@@ -224,4 +224,5 @@ img.qr-code {
   max-width: 200px;
   height: auto;
   float:left;
+  margin-right: 12px;
 }
