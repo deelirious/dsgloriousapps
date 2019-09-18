@@ -137,6 +137,9 @@ section.highlight2 {
     padding-bottom: 7%;
 }
 
+a:link, a:visited {
+  color: black;
+}
 section.highlight1 a:link, section.highlight1 a:visited,
 section.highlight2 a:link, section.highlight2 a:visited {
     color: white;
@@ -220,4 +223,5 @@ p.figure {
 img.qr-code {
   max-width: 200px;
   height: auto;
+  float:left;
 }
