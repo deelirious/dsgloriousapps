@@ -137,8 +137,8 @@ section.highlight2 {
     padding-bottom: 7%;
 }
 
-section.highlight1 a:link, section.higlight1 a:visited,
-section.highlight2 a:link, section.higlight2 a:visited {
+section.highlight1 a:link, section.highlight1 a:visited,
+section.highlight2 a:link, section.highlight2 a:visited {
     color: white;
 }
 
@@ -215,4 +215,9 @@ p.figure {
     margin-bottom: -2em;
     color: white;
     background: rgba(64, 64, 64, .5);
+}
+
+img.qr-code {
+  max-width: 200px;
+  height: auto;
 }
