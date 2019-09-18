@@ -137,6 +137,11 @@ section.highlight2 {
     padding-bottom: 7%;
 }
 
+section.highlight1 a:link, section.higlight1 a:visited,
+section.highlight2 a:link, section.higlight2 a:visited {
+    color: white;
+}
+
 section.body-text {
     color: #293c1f;
 }
